@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:margin="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <header>
     <h1 style = "font-family:serif">Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+    <img src="img/logo_new.png" alt="Team Logo" class="team-logo">
 
     <!-- Navigation menu to switch between sections -->
     <nav>
@@ -26,7 +26,7 @@
     <div class="card">
         <h2>Pranav Pamula</h2>
         <p>CS Student</p>
-        <button onclick="toggleBio('bio1'); toggleBio('bio_moodboard'); toggleBio('matlab_image'); toggleBio('Mathematica_image'); toggleBio('jupyterlab_image'); toggleBio('recursion_image');">Show Bio</button>
+        <button onclick="toggleBio('bio1'); toggleBio('bio_moodboard'); toggleBio('matlab_image'); toggleBio('Mathematica_image'); toggleBio('jupyterlab_image'); toggleBio('recursion_image'); toggleBio('map_link');">Show Bio</button>
         <img src="img/Pranav_profile.png" alt="Pranav profile picture" width=250>
         <p id="bio1" class="bio", style="font-family:Georgia;color:blue;">Pranav is a CS and physics undergraduate at UNC Charlotte. </p>
         <p id="bio_moodboard" class="moodboard" style="font-family:garamond; font-weight: bold;">Mood board:</p>
@@ -34,7 +34,7 @@
         <img id = "Mathematica_image" src="img/Mathematica.png" alt="Mathematica logo" width=200>
         <img id = "jupyterlab_image" src="img/jupyterlab.png" alt="Jupyter logo" width=200>
         <img id = "recursion_image" src="img/recursion.png" alt="Recursion image" width=200>
-        <a href="https://philogb.github.io/page/myriahedral/"> A particularly interesting GitHub link</a>
+        <a id = "map_link" href="https://philogb.github.io/page/myriahedral/"> A particularly interesting GitHub link</a>
     </div>
     <div class="card">
         <h2>Jane Smith</h2>
@@ -53,7 +53,13 @@
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
     <h2>Our Mission Statement</h2>
-    <p>Our aim is to work efficiently and create a harmonious working environment. </p>
+    <p>Our goal is to work efficiently and create a harmonious working environment. We value respect and hard work. We can work together well in GitHub and resolve conflicts. </p>
+    <p style="font-weight: 900;">Rules: </p>
+    <ul>
+        <li>Work consistently; put in effort every week.</li>
+        <li>When disagreements arise, discuss calmly and do not resort to shouting.</li>
+        <li>Be present at every meeting, online or physical.</li>
+    </ul>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
