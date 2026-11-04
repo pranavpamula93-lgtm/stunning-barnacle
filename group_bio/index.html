@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1 style = "font-family:serif">Meet Our Team</h1>
+    <!-- Example team logo -->
+    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')" style = "color:orange;">Team Bios</button>
+        <button onclick="showSection('vision')" style = "color:yellowgreen;">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Pranav Pamula</h2>
+        <p>CS Student</p>
+        <button onclick="toggleBio('bio1'); toggleBio('bio_moodboard'); toggleBio('matlab_image'); toggleBio('Mathematica_image'); toggleBio('jupyterlab_image'); toggleBio('recursion_image');">Show Bio</button>
+        <img src="img/Pranav_profile.png" alt="Pranav profile picture" width=250>
+        <p id="bio1" class="bio", style="font-family:Georgia;color:blue;">Pranav is a CS and physics undergraduate at UNC Charlotte. </p>
+        <p id="bio_moodboard" class="moodboard" style="font-family:garamond; font-weight: bold;">Mood board:</p>
+        <img id = "matlab_image" src="img/MATLAB.png" alt="MATLAB logo" width=200>
+        <img id = "Mathematica_image" src="img/Mathematica.png" alt="Mathematica logo" width=200>
+        <img id = "jupyterlab_image" src="img/jupyterlab.png" alt="Jupyter logo" width=200>
+        <img id = "recursion_image" src="img/recursion.png" alt="Recursion image" width=200>
+        <a href="https://philogb.github.io/page/myriahedral/"> A particularly interesting GitHub link</a>
+    </div>
+    <div class="card">
+        <h2>Len Bui</h2>
+        <p>CS Student</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">Len is a CS student at UNC Charlotte. Len enjoys working interactive elements and UI design.</p>
+        <img src="img/lenimg/Peso_penguin_23H11.png" alt="Avatar for len" width=200>
+        <img src="img/lenimg/figmalogo.png" alt= "image for Len" width=200>
+        <img src="img/lenimg/uidesign.jpg" alt= "image for Len" width=200>
+    </div>
+    <div class="card">
+        <h2>Emily Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>Our aim is to work efficiently and create a harmonious working environment. </p>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
