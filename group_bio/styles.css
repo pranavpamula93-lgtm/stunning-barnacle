@@ -88,3 +88,19 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+.CharlesImages {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.bio3{
+    font-family: pacifico;
+    color: green;
+}
+
+.moodBoardInteract{
+    width: 125px;
+    margin: auto;
+}
+
